@@ -1,0 +1,453 @@
+ Python abs()
+ returns absolute value of a number
+
+ Input = float(input('enter a number'))
+ print(abs(Input))
+
+ Python all()
+ returns true when all elements in iterable is true
+ 
+ _list = [9, 4, 0, 3]
+ result = all(_list)
+
+ if result:
+    print("all eliment in the list is true")
+ else:
+    print("one eliment in the list is false")
+
+ Python any()
+ Checks if any Element of an Iterable is True
+
+ lst = [1, 3, 5, 0]
+ r = any(lst)
+ if r:
+    print("in the list one elemint is true")
+ else:
+    print("all the list elemint is false")
+
+ Python ascii()
+ Returns String Containing Printable Representation
+
+ ascii()
+ s = input("Enter a string")
+ ascii_s = ascii(s)
+ print(ascii_s)
+
+ Python bin()
+ converts integer to binary string
+
+ num = int(input("Enter the number:"))
+ binarry = bin(num)
+ print(binarry)
+
+ Python bool()
+ Converts a Value to Boolean
+
+ x = input("Enter the value")
+ r = bool(x)
+ print(r)
+
+ Python bytearray()
+ returns array of given byte size
+
+ l = [1, 31, 41]
+ byt_ear = bytearray(l)
+ print(byt_ear)
+
+ Python bytes()
+ returns immutable bytes object
+
+ l = [1, 31, 41]
+ r = bytes(l)
+ print(l)
+
+ Python callable()
+ Checks if the Object is Callable
+
+ global_var = global()
+ num_var = len(global_var)
+ print(num_var)
+
+ Python chr()
+ Returns a Character (a string) from an Integer
+
+ class myclass:
+    def __init__(self,x):
+       self.x = x
+ obj = myclass(2)
+ x = hasattr(obj, x)
+ y = hasattr(obj, y)
+ print(f"x:{x},y:{y}")
+
+ Python compile()
+ Returns a Python code object
+
+ x = compile('print(10)','lest','eval')
+ exec(x)
+
+ Python complex()
+ Creates a Complex Number
+
+ x = complex(4,10)
+ print(x)
+
+ Python delattr()
+ Deletes Attribute From the Object
+ 
+ class person:
+    name = 'ali'
+    age = 23
+
+ delattr(person,age)
+
+ Python dict()
+ Creates a Dictionary
+ 
+ s = dict(name='ali',age=10)
+ print(s)
+
+ Python dir()
+ Tries to Return Attributes of Object
+
+ class employee:
+    name = 'kabir'
+    age = 10
+ print(dir(employee))
+
+ Python divmod()
+ Returns a Tuple of Quotient and Remainder
+
+ print(divmod(20,3))
+
+ Python enumerate()
+ Returns an Enumerate Object
+ 
+ t = ('appel','banana','cherry')
+ print(enumerate(t))
+
+ ython eval()
+ Runs Python Code Within Program
+
+ num = '4*2+90-2'
+ print(eval(num))
+
+ Python exec()
+ Executes Dynamically Created Program
+
+ n = ('name = "ali"\nprint(name)')
+ exec(n)
+
+ Python filter()
+ constructs iterator from elements which are true
+
+ num = [1,3,5,7,2,4,6]
+ def odd_even(x):
+    if x % 2 == 0:
+        return True
+    else:
+        return False
+ filter(odd_even,num)
+
+ Python float()
+ returns floating point number from number, string
+
+ x = 2
+ print(float(x))
+
+ Python format()
+ returns formatted representation of a value
+
+ y = format(0.5,'%')
+ print(y)
+
+ Python frozenset()
+ returns immutable frozenset object
+
+ my_list = ['python','c++','c#']
+ x = frozenset(my_list)
+
+ Python getattr()
+ returns value of named attribute of an object
+
+ class Human:
+    name = 'Ali'
+    age = 22
+ x = getattr(Human,'age')
+
+ Python globals()
+ returns dictionary of current global symbol table
+
+ y = globals()
+ print(y)
+
+ Python hasattr()
+ returns whether object has named attribute
+
+ class person:
+    name = 'murtaza'
+    age = 20
+ x = hasattr(person,'age')
+
+ Python help()
+ Invokes the built-in Help System
+
+ x = 'ali'
+ print(help(x))
+
+ Python hex()
+ Converts to Integer to Hexadecimal
+
+ y = 321
+ print(hex(y))
+
+ Python id()
+ Returns Identify of an Object
+
+ name = 'Murtaza'
+ print(id(name))
+
+ Python input()
+ reads and returns a line of string
+
+ Input = input('Enter your name: ')
+ 
+ Python int()
+ returns integer from a number or string
+
+ num = '221133'
+ print(int(num))
+
+ Python isinstance()
+ Checks if a Object is an Instance of Class
+
+ Python issubclass()
+ Checks if a Class is Subclass of another Class
+ 
+ class A:
+    pass
+ class B(A):
+    pass
+ print(issubclass(B,A))
+ 
+ Python iter()
+ returns an iterator
+
+ l = [1,2,3,4]
+ l = iter(l)
+ print(next(l))
+ print(next(l))
+ print(next(l))
+ print(next(l))
+
+ Python len()
+ Returns Length of an Object
+
+ name = 'Ali'
+ print(len(name))
+
+ Python list()
+ creates a list in Python
+
+ t = (1,2,3,4,5)
+ print(list(t))
+ 
+ Python locals()
+ Returns dictionary of a current local symbol table
+
+ def func():
+ x = 3
+ y = 2
+ z = locals()
+ print(z)
+
+
+ func()
+
+ Python map()
+ Applies Function and Returns a List
+
+ def func(_list ):
+    r = _list + 2
+ 
+ _list = [1,2,3,4]
+ f = map(func,_list)
+ print(list(f))
+
+ Python max()
+ returns the largest item
+
+ prin(max(1,2,3,4))
+
+ Python memoryview()
+ returns memory view of an argument
+
+ x = 'How are you'
+ print(memoryview(x))
+
+ Python min()
+ returns the smallest value
+
+ prin(min(1,2,3,4))
+
+ Python next()
+ Retrieves next item from the iterator
+ 
+ l = [1,2,3,4]
+ l = iter(l)
+ print(next(l))
+ print(next(l))
+ print(next(l))
+ print(next(l))
+
+ Python object()
+ creates a featureless object
+
+ class A(object):
+    def __init__(self,n,a):
+       self.n=n
+       self.a=a
+ v = A('ali',29)
+
+ Python oct()
+ returns the octal representation of an integer
+
+ x = 99
+ print(oct(99))
+
+ Python open()
+ Returns a file object
+
+ open('exet.txe','r')
+
+ Python ord()
+ returns an integer of the Unicode character
+
+ print(ord('w'))
+
+ Python pow()
+ returns the power of a number
+
+ print(pow(2,3))
+
+ Python print()
+ Prints the Given Object
+
+ print('hello world')
+ 
+ Python range()
+ returns a sequence of integers
+
+ for i in range(10):
+    print(i)
+
+ Python repr()
+ returns a printable representation of the object
+
+ class person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+        
+    def __repr__(self):
+        return f'{self.name} {self.age}'
+
+ Python reversed()
+ returns the reversed iterator of a sequence
+
+ l = [1,2,3,4,5]
+ l.reverse()
+ print(l)
+ 
+ Python round()
+ rounds a number to specified decimals
+
+ r = round(5.3487292854,5)
+ print(r)
+
+ Python set()
+ constructs and returns a set
+
+ s = set((1,3,4,2))
+ print(s)
+
+ Python setattr()
+ sets the value of an attribute of an object
+
+ class employee:
+    name = 'ali'
+    age = 33
+ setattr(employee,'age',60)
+
+ Python slice()
+ returns a slice object
+
+ _list = [1,2,3,4]
+ result = slice(3)
+ print(_list[result])
+
+ Python sorted()
+ returns a sorted list from the given iterable
+
+ a = ('a','g','c','d')
+ print(sorted(a))
+
+ Python str()
+ returns the string version of the object
+ 
+ _str = 123
+ print(str(_str))
+
+ Python sum()
+ Adds items of an Iterable
+ 
+ lis = [1,2,3,4]
+ print(sum(lis))
+
+ Python super()
+ Returns a proxy object of the base class
+ 
+ class animal:
+    def __init__(self,name,wedth):
+        self.name = name
+        self.wedth = wedth
+
+ class dog(animal):
+    def __init__(self,name,wedth,color):
+        super().__init__(name,wedth)
+        self.color = color
+ 
+ Python tuple()
+ Returns a tuple
+
+ t = [1,2,3,4,5]
+ print(tuple(t))
+ 
+ Python type()
+ Returns the type of the object
+
+ x = 3
+ y = 'ali'
+ print(type(x,y))
+
+ Python vars()
+ Returns the __dict__ attribute
+
+ class person:
+    name = 'Abbas'
+    age = 22
+    cantree = 'Afg'
+ print(vars(person))
+
+ Python zip()
+ Returns an iterator of tuples
+ 
+ x = ['a','b','c']
+ y = [1,2,3]
+ r = zip(x,y)
+ 
+ Python __import__()
+ Function called by the import statement
+
+ np = __import__('numpy',globals,locals,[1,0])
+ a = np.array([1,2,3])
+ print(type(a))
